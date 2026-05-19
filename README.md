@@ -1,80 +1,83 @@
-🏠 TAREFA DE CASA (individual)
+**📖 Sobre o Projeto**
 
-📅  Entrega: início da próxima aula | Trabalho individual | Envie prints do Postman e do H2 Console comprovando cada etapa.
+O Sistema de Eventos Acessíveis é uma API RESTful desenvolvida com Java e Spring Boot com o objetivo de facilitar o gerenciamento de eventos inclusivos e acessíveis para diferentes públicos.
 
+A aplicação permite o cadastro de participantes, organizadores, categorias de eventos e preferências de acessibilidade, garantindo uma experiência mais inclusiva para pessoas com necessidades específicas.
 
-T1
-@JsonCreator no enum TipoCliente
-💻 Individual
-🏠 Casa
+Este projeto foi desenvolvido como trabalho prático da disciplina de desenvolvimento backend utilizando Spring Boot e PostgreSQL.
 
+👩‍💻 Desenvolvedora
 
+Nome: Raquel Taveira
 
-☐
-Criar a classe EnumValidationException estendendo Exception com construtor que recebe String.
-☐
-Adicionar @JsonCreator no enum TipoCliente para validar entradas inválidas.
+Tema Escolhido: 🎤♿ Sistema de Eventos Acessíveis
 
+GitHub:
+GitHub
 
-☐
-A mensagem da exceção deve listar os valores aceitos.
-☐
-Testar no Postman: tipo válido → 201 | tipo inválido → 400 | campo ausente → 400.
-☐
-Entregar prints dos 3 cenários.
+🎯 Objetivo
 
+Desenvolver uma API RESTful completa utilizando:
 
-T2
-Segunda subclasse
-💻 Individual
-🏠 Casa
+Java
+Spring Boot
+PostgreSQL
+Spring Data JPA
+Hibernate
+Swagger/OpenAPI
+Bean Validation
 
+Aplicando conceitos de:
 
+Arquitetura em camadas
+CRUD completo
+Relacionamentos JPA
+DTOs
+Tratamento de exceções
+Documentação de API
+🛠️ Tecnologias Utilizadas
+☕ Java 17
+🌱 Spring Boot
+🐘 PostgreSQL
+📦 Maven
+🔄 Spring Data JPA
+🧩 Hibernate
+📄 Swagger / OpenAPI
+✅ Bean Validation
+🐙 Git & GitHubreal você escolheria JOINED em vez de @MappedSuperclass ou SINGLE_TABLE
 
-☐
-Criar uma segunda subclasse da entidade Cliente (exemplo: ClienteVip com atributo consultorResponsavel).
+🧱 Entidades Principais
+👤 Participante
 
+Representa os usuários que participam dos eventos.
 
-☐
-Criar CRUD completo para a nova entidade.
-☐
-Comparar @MappedSuperclass com SINGLE_TABLE.
-☐
-Preencher a tabela abaixo com os resultados:
+♿ PreferenciaAcessibilidade
 
+Armazena as necessidades de acessibilidade do participante.
 
-Estratégia
-Tabelas criadas
-Coluna DTYPE existe?
-Campos nulos possíveis?
-Sua avaliação
-@MappedSuperclass
+🎤 Evento
 
+Representa os eventos cadastrados na plataforma.
 
+🏢 Organizador
 
+Responsável pela criação e gerenciamento dos eventos.
 
+🗂️ CategoriaEvento
 
+Classificação dos eventos por categoria.
 
+🎨 Funcionalidades Extras
+🔍 Filtros personalizados
+📄 Paginação
+🕵️ Auditoria de registros
+📊 Endpoints estatísticos
+🧪 Testes unitários
 
+✅ Status do Projeto
 
-SINGLE_TABLE
+🚧 Projeto em desenvolvimento
 
+📬 Entrega
 
-T3 🌟
-BÔNUS — Estratégia JOINED e análise de queries SQL
-💡 Bônus
-🏠 Casa
-
-
-Explore a estratégia mais normalizada e analise as queries geradas.
-
-☐
-Alterar a hierarquia para @Inheritance(strategy=InheritanceType.JOINED) 
-☐
-Habilitar spring.jpa.show-sql=true no application.properties.
-☐
-Subir a aplicação e verificar no H2 Console: quantas tabelas foram criadas? Quais são?
-☐
-Fazer um GET por id de um  ClientePremium e copiar o SQL e observar o sql
-☐
-Responder: em qual cenário real você escolheria JOINED em vez de @MappedSuperclass ou SINGLE_TABLE?
+Repositório público disponível no GitHub para avaliação do projeto.    
