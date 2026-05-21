@@ -1,6 +1,6 @@
 package org.serratec.raquel.controller;
 
-import org.serratec.raquel.domain.PreferenciaAcessibilidade;
+import org.serratec.raquel.domain.Organizador;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/oranizadorcontroller")
+@RequestMapping("/Organizador")
 
 public class OrganizadorController {
     @PostMapping 

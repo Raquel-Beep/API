@@ -5,12 +5,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/preferenciaacessibilidade")
+@RequestMapping("/preferencia-acessibilidade")
     
     public class PreferenciaacessibilidadeController {
 
-        @postmapping 
-        public ResponseEntity<String> criarPreferenciaAcessibilidade(@Valid @RequestBody PreferenciaAcessibilidade preferencia) {
+        @PostMapping 
+        public ResponseEntity<String> criarPreferenciaAcessibilidade(
+            @Valid @RequestBody PreferenciaAcessibilidade preferencia) {
             
             return ResponseEntity
             

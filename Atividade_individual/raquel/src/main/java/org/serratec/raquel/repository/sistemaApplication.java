@@ -1,11 +1,12 @@
-package org.serratec.raquel.repository;
+package org.serratec.raquel; 
 
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class sistemaApplication {
+public class SistemaApplication {
    
     public static void main(String[] args) {
-        org.springframework.boot.SpringApplication.run(sistemaApplication.class, args);
+        SpringApplication.run(SistemaApplication.class, args);
     }
 }
