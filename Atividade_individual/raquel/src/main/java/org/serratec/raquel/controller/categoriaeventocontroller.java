@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/categoriaeventocontroller")
-    public class categoriaeventocontroller {
+    public class CategoriaEventoController {
 
         @PostMapping
         public ResponseEntity<String> criarCategoriaEvento(@Valid @RequestBody CategoriaEvento categoriaEvento) {

@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/participante")
 
-    public class participanteController {
+    public class ParticipanteController {
 
         @PostMapping
         public ResponseEntity<String> criarParticipante(@Valid @RequestBody Participante participante) {

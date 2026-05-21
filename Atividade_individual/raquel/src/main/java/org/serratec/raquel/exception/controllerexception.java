@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ControllerAdvice
- public class controllerexception  extends responseentityexceptionhandler {
+ public class ControllerException  extends responseentityexceptionhandler {
 
     @Override
     protected ResponseEntity<Object> handlehttpmensagenotreadable(

@@ -10,7 +10,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/eventocontroller")
-public class eventocontroller {
+public class EventoController {
 
     @PostMapping
     public ResponseEntity<String> criarEvento(@Valid @RequestBody Evento evento)

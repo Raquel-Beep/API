@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/preferenciaacessibilidade")
     
-    public class preferenciaacessibilidadecontroller {
+    public class PreferenciaacessibilidadeController {
 
         @postmapping 
         public ResponseEntity<String> criarPreferenciaAcessibilidade(@Valid @RequestBody PreferenciaAcessibilidade preferencia) {

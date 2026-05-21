@@ -12,7 +12,7 @@ import jakarta.validation.Valid;
 @RestController
 @RequestMapping("/oranizadorcontroller")
 
-public class organizadorcontroller {
+public class OrganizadorController {
     @PostMapping 
     public ResponseEntity<String> criarOrganizador(@Valid @RequestBody Organizador organizador) {
         
