@@ -16,5 +16,5 @@ public class SwaggerConfig {
                         .description("API para gerenciar tarefas, incluindo criação, leitura, atualização e exclusão.")
                         .contact(new Contact()
                                 .name("Raquel Serratec")
-                                .email("
+                                .email()
 }

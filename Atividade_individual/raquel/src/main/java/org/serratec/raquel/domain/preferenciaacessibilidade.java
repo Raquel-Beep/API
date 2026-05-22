@@ -1,5 +1,7 @@
 package org.serratec.raquel.domain;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -19,13 +21,16 @@ public class PreferenciaAcessibilidade {
     private boolean acompanhante;
     private String observacao;
 
+    public PreferenciaAcessibilidade() {
+}
+
     
     @JsonManagedReference("preferencia-participante")
     @OneToOne
     @JoinColumn(name = "participante_id")
     private Participante participante;
 
-    public PreferenciaAcessibilidade() {}
+   
 
     // Getters e Setters
     public Long getId() { return id; }
