@@ -13,6 +13,7 @@ public class CategoriaEvento {
 
     private String nomeCategoria;
 
+    @JsonManagedReference("categoria-eventos")
     @OneToMany(mappedBy = "categoria")
     private List<Evento> eventos;
 

@@ -19,6 +19,8 @@ public class PreferenciaAcessibilidade {
     private boolean acompanhante;
     private String observacao;
 
+    
+    @JsonManagedReference("preferencia-participante")
     @OneToOne
     @JoinColumn(name = "participante_id")
     private Participante participante;

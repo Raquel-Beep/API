@@ -2,10 +2,16 @@ package org.serratec.raquel.dto;
 
 import org.serratec.raquel.domain.Participante;
 
+import jakarta.validation.constraints.NotBlank;
+
+@Schema(description = "Dados do participante")
 public class ParticipanteDTOResponse {
 
+    @Schema(description = "ID do participante")
     private Long id;
+    @Schema(description = "Nome do participante")
     private String nome;
+    @Schema(description = "Email do participante")
     private String email;
 
     public ParticipanteDTOResponse() {

@@ -5,6 +5,8 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 @Entity
 @Table(name = "participante")
 public class Participante {
@@ -23,14 +25,15 @@ public class Participante {
     @NotBlank(message = "A senha é obrigatória")
     private String senha;
 
+    @JsonManagedReference("preferencia-participante")
     @OneToOne(mappedBy = "participante")
     private PreferenciaAcessibilidade preferenciaAcessibilidade;
 
+    @JsonBackReference("evento-participante")
     @ManyToMany(mappedBy = "participantes")
     private List<Evento> eventos;
 
     public Participante() {}
-
     public Participante(String nome, String email, String senha) {
         this.nome = nome;
         this.email = email;

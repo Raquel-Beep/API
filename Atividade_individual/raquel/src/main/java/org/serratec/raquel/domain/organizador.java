@@ -23,6 +23,8 @@ public class Organizador {
     @NotBlank(message = "A senha é obrigatória")
     private String senha;
 
+    
+    @JsonManagedReference("organizador-eventos")
     @OneToMany(mappedBy = "organizador")
     private List<Evento> eventos;
 

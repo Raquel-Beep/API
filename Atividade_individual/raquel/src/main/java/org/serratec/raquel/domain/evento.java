@@ -19,10 +19,12 @@ public class Evento {
     private LocalDate data;
     private LocalTime hora;
 
+    @JsonBackReference("evento-organizador")
     @ManyToOne
     @JoinColumn(name = "organizador_id")
     private Organizador organizador;
 
+    @JsonBackReference("evento-participante")
     @ManyToMany
     @JoinTable(
         name = "evento_participante",
