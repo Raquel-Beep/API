@@ -1,4 +1,4 @@
-package org.serratec.raquel.DTO;
+package org.serratec.raquel.dto;
 
 @Schema(description = "Resposta do evento")
 public class EventoDTOResponse {

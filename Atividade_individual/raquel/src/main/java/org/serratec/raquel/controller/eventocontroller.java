@@ -2,8 +2,8 @@ package org.serratec.raquel.controller;
 
 import java.net.URI;
 
-import org.serratec.raquel.DTO.EventoDTORequest;
-import org.serratec.raquel.DTO.EventoDTOResponse;
+import org.serratec.raquel.dto.EventoDTORequest;
+import org.serratec.raquel.dto.EventoDTOResponse;
 import org.serratec.raquel.domain.Evento;
 import org.serratec.raquel.service.EventoService;
 import org.springframework.beans.factory.annotation.Autowired;

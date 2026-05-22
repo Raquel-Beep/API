@@ -1,4 +1,4 @@
-package org.serratec.raquel.DTO;
+package org.serratec.raquel.dto;
 
 import org.serratec.raquel.domain.Organizador;
 

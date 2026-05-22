@@ -1,7 +1,11 @@
-package org.serratec.raquel.DTO;
+package org.serratec.raquel.dto;
+
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 
 @Schema(description = "Dados/Atualização de um evento")
 public class EventoDTORequest {
@@ -19,32 +23,35 @@ public class EventoDTORequest {
     private String localEvento;
 
     @Schema(description = "Data do evento")
-    @NotBlank(message = "A data do evento é obrigatória")
+    @NotNull(message = "A data do evento é obrigatória")
     private LocalDate dataEvento;
 
     @Schema(description = "Hora do evento")
-    @NotBlank(message = "A hora é obrigatoria")
+    @NotNull(message = "A hora é obrigatória")
     private LocalTime horaEvento;
 
     @Schema(description = "Id do organizador")
-    @NotBlank(message = "O id do organizador é obrigatorio")
+    @NotBlank(message = "O id do organizador é obrigatório")
     private String idOrganizador;
 
     @Schema(description = "Id da categoria")
-    @NotBlank(message = "O id da categoria é obrigatório")
+    @NotNull(message = "O id da categoria é obrigatório")
     private Long idCategoria;
 
     // Getters e Setters
 
-    public String getNome() {
-        return nome;
+    public String getNomeEvento() {
+        return nomeEvento;
     }
-    public void setNome(String nome) {
-        this.nome = nome;
+
+    public void setNomeEvento(String nomeEvento) {
+        this.nomeEvento = nomeEvento;
     }
+
     public String getDescricaoEvento() {
         return descricaoEvento;
     }
+
     public void setDescricaoEvento(String descricaoEvento) {
         this.descricaoEvento = descricaoEvento;
     }
@@ -52,6 +59,7 @@ public class EventoDTORequest {
     public String getLocalEvento() {
         return localEvento;
     }
+
     public void setLocalEvento(String localEvento) {
         this.localEvento = localEvento;
     }
@@ -59,6 +67,7 @@ public class EventoDTORequest {
     public LocalDate getDataEvento() {
         return dataEvento;
     }
+
     public void setDataEvento(LocalDate dataEvento) {
         this.dataEvento = dataEvento;
     }
@@ -66,6 +75,7 @@ public class EventoDTORequest {
     public LocalTime getHoraEvento() {
         return horaEvento;
     }
+
     public void setHoraEvento(LocalTime horaEvento) {
         this.horaEvento = horaEvento;
     }
@@ -73,6 +83,7 @@ public class EventoDTORequest {
     public String getIdOrganizador() {
         return idOrganizador;
     }
+
     public void setIdOrganizador(String idOrganizador) {
         this.idOrganizador = idOrganizador;
     }
@@ -80,6 +91,7 @@ public class EventoDTORequest {
     public Long getIdCategoria() {
         return idCategoria;
     }
+
     public void setIdCategoria(Long idCategoria) {
         this.idCategoria = idCategoria;
     }
