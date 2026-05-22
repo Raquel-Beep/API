@@ -2,6 +2,7 @@ package org.serratec.raquel.domain;
 
 import jakarta.persistence.*;
 import java.util.List;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 @Entity
 @Table(name = "categoria_evento")
